@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive-Table-and-button</title>
+	<style>
+		table, th, td {
+			margin-left: 10px;
+			border: 2px solid black;
+			background: #808080;
+			color: #fff;
+			padding: 8px;
+		}
+		table {
+			border-collapse: collapse;
+			width: 50%;
+			margin-bottom: 20px;
+		}
+		th, td {
+			text-align: left;
+		}
+		.main {
+			width: 100%;
+			text-align: center;
+		}
+		.button {
+			background: #15adff;
+			padding: 10px;
+			width: 100px;
+			text-align: center;
+			margin: auto;
+			transition: all 0.3s ease;
+			border-radius: 4px;
+		}
+		.button:hover {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			line-height: 100px;
+			background: #15adff;
+			opacity: 0.6;
+		}
+		.button a {
+			text-decoration: none;
+			color: white;
+			display: block;
+			height: 100%;
+		}
+		@media only screen and (max-width: 600px) {
+			table, th, td {
+				background-color: #000;
+				border-color: #ff0000;
+			}
+			table {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Table</h1>
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Product Name</th>
+			<th>Product Price</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Product-A</td>
+			<td>$20</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Product-B</td>
+			<td>$40</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Product-C</td>
+			<td>$80</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Product-D</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Product-E</td>
+			<td>$120</td>
+		</tr>
+	</table>
+
+	<h1>button</h1>
+	<div class="main">
+		<div class="button">
+			<a href="#">Button</a>
+		</div>
+	</div>
+
+</body>
+</html>
